@@ -22,4 +22,4 @@ Add URL/tag for docker image pull.
 
 ------------------------------------------------------------------------
 
-Template developed by @samuelbharti. Use R package available at samuelbharti/peacock for local development. 
+Template developed by \@[samuelbharti](https://github.com/SamuelBharti). Use R package available at [samuelbharti/peacock](https://github.com/samuelbharti/peacock) for local development.
