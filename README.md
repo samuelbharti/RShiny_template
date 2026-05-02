@@ -1,5 +1,7 @@
 # Project Title
 
+[![DOI](https://zenodo.org/badge/863042025.svg)](https://doi.org/10.5281/zenodo.19968600)
+
 Add a short description of your application.
 
 Current app version: v0.1.0
