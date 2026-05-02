@@ -1,9 +1,10 @@
 other_page <- fluidPage(
-  # Page title
-  titlePanel("Other Page"),
+  titlePanel("Other"),
   hr(),
   fluidRow(
-    column(6, h2("Column size 6")),
-    column(6, h2("Column size 6"))
+    column(
+      width = 12,
+      p("Use this page for secondary features, documentation, or data downloads.")
+    )
   )
 )
