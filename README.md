@@ -1,6 +1,6 @@
 # Project Title
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19968601.svg)](https://doi.org/10.5281/zenodo.19968601)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19968600.svg)](https://doi.org/10.5281/zenodo.19968600)
 
 Add a short description of your application.
 
