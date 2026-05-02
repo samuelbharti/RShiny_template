@@ -1,5 +1,4 @@
 # Contributing Guidelines
-
 ## Branching
 
 - Create feature branches from `dev`.
@@ -17,7 +16,6 @@
 - Keep utility functions in `R/`.
 
 ## Pull Request Checklist
-
 - [ ] App runs locally.
 - [ ] New/changed code follows the project structure.
 - [ ] README/docs updated if behavior changed.

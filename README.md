@@ -16,7 +16,7 @@ Current app version: v0.1.0
 
 ```r
 if (!requireNamespace("renv", quietly = TRUE)) {
-	install.packages("renv")
+  install.packages("renv")
 }
 
 renv::restore()
@@ -26,12 +26,12 @@ renv::restore()
 
 ```r
 install.packages(c(
-	"shiny",
-	"bslib",
-	"dplyr",
-	"ggplot2",
-	"DT",
-	"plotly"
+  "shiny",
+  "bslib",
+  "dplyr",
+  "ggplot2",
+  "DT",
+  "plotly"
 ))
 ```
 
@@ -50,7 +50,7 @@ docker build -t my-shiny-app .
 docker run --rm -p 3838:3838 my-shiny-app
 ```
 
-Then open http://localhost:3838.
+Then open [http://localhost:3838](http://localhost:3838).
 
 This template expects a project-level `renv.lock` file and `renv/` metadata to be present in the app you create from it.
 
