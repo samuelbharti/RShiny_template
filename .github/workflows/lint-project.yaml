@@ -1,16 +1,16 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
-on:
-  push:
-    branches: [main, master, dev]
-  pull_request:
-    branches: [main, master, dev]
+# on:
+#   push:
+#     branches: [main, master, dev]
+#   pull_request:
+#     branches: [main, master, dev]
 
-name: lint-project.yaml
+# name: lint-project.yaml
 
-permissions: read-all
+# permissions: read-all
 
-jobs:
+# jobs:
   # lint-markdown:                                                             # Disabled: temporary until markdownlint rules are stabilized
   #   runs-on: ubuntu-latest
   #   steps:

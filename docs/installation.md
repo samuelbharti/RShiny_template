@@ -8,6 +8,16 @@
 
 If you are using Docker, keep `renv.lock` and the `renv/` directory in the project root so the image can restore the project library from the lockfile.
 
+### Quick-start helper
+
+This template includes a helper script to initialize `renv` for a new project. Run:
+
+```sh
+Rscript dev/init-renv.R
+```
+
+This will create `renv.lock` after installing a small set of recommended packages. Review the lockfile before committing.
+
 ## Manual setup
 
 Install required packages listed in README and run `shiny::runApp()`.

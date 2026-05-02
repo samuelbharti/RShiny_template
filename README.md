@@ -1,8 +1,10 @@
 # Project Title
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19968601.svg)](https://doi.org/10.5281/zenodo.19968601)
+
 Add a short description of your application.
 
-Current app version: v0.1.0
+Current app version: v2.0
 
 ## Requirements
 
@@ -86,3 +88,7 @@ See CONTRIBUTING.md for contribution guidelines.
 ---
 
 Template developed by [samuelbharti](https://github.com/SamuelBharti).
+
+## How to cite
+
+If you use this template or a derived project, please cite it. Machine-readable citation metadata is available in `CITATION.cff`, and a human-readable example is provided in `CITATION.md`.
