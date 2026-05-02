@@ -39,12 +39,10 @@ body:
     description: |
       examples:
         - **OS**: Ubuntu 20.04
-        - **Node**: 13.14.0
-        - **npm**: 7.6.3
+        - **R version**: 4.5.0
     value: |
         - OS:
-        - Node:
-        - npm:
+        - R version:
     render: markdown
   validations:
     required: false
