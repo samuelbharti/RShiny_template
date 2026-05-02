@@ -4,7 +4,7 @@
 
 Add a short description of your application.
 
-Current app version: v0.1.0
+Current app version: v2.0
 
 ## Requirements
 
