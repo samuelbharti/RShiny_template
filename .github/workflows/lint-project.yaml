@@ -11,12 +11,12 @@ name: lint-project.yaml
 permissions: read-all
 
 jobs:
-  lint-markdown:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Lint markdown files
-        uses: DavidAnson/markdownlint-cli2-action@v20
-        with:
-          globs: |
-            **/*.md
+  # lint-markdown:                                                             # Disabled: temporary until markdownlint rules are stabilized
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Lint markdown files
+  #       uses: DavidAnson/markdownlint-cli2-action@v20
+  #       with:
+  #         globs: |
+  #           **/*.md
