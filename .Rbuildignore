@@ -1,1 +1,7 @@
 ^\.github$
+^data$
+^dev$
+^docs$
+^renv$
+^renv\.lock$
+^Dockerfile$

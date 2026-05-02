@@ -1,9 +1,12 @@
-# CHANGELOG
+# Changelog
 
-``` txt
-YYYY-MM-DD  John Doe
+All notable changes to this project should be documented in this file.
 
-* Big Change 1
-* Another Change 2
-```
-    
+## [Unreleased]
+
+- Initial template setup.
+
+## [0.1.0] - 2026-05-01
+
+- Created base Shiny template structure.
+
