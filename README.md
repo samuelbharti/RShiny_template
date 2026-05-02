@@ -1,25 +1,81 @@
 # Project Title
 
-Add project description
+Add a short description of your application.
 
-# Requirements
+Current app version: v0.1.0
 
-Add requirements to run this app.
+## Requirements
 
-# How to run this Shiny App
+- R (>= 4.3)
+- RStudio (optional)
+- Packages used by the app (managed with `renv` recommended)
 
-Add instructions and configurations needed to run this app.
+## Installation
 
-# Deployment
+### Option 1: Using renv (recommended)
 
-Add current deployment URLs.
+```r
+if (!requireNamespace("renv", quietly = TRUE)) {
+	install.packages("renv")
+}
 
-# Docker Image
+renv::restore()
+```
 
-Add URL/tag for docker image pull.
+### Option 2: Manual package installation
 
-# Contribution
+```r
+install.packages(c(
+	"shiny",
+	"bslib",
+	"dplyr",
+	"ggplot2",
+	"DT",
+	"plotly"
+))
+```
 
-------------------------------------------------------------------------
+## How To Run
 
-Template developed by \@[samuelbharti](https://github.com/SamuelBharti). Use R package available at [samuelbharti/peacock](https://github.com/samuelbharti/peacock) for local development.
+```r
+shiny::runApp()
+```
+
+Or open the project in RStudio and click Run App.
+
+## Build And Run With Docker
+
+```bash
+docker build -t my-shiny-app .
+docker run --rm -p 3838:3838 my-shiny-app
+```
+
+Then open http://localhost:3838.
+
+## Project Structure
+
+```txt
+.
+├── global.R                # Libraries and global objects
+├── ui.R                    # App UI definition
+├── server.R                # App server logic
+├── R/                      # Utility functions
+├── modules/                # Reusable Shiny modules
+├── userInterface/          # Page-level UI components
+├── data/                   # App data files
+├── dev/                    # Local development scripts
+├── www/                    # Static assets (css/js/img)
+└── docs/                   # Project documentation
+```
+
+## Deployment
+
+Add deployment details (Posit Connect, shinyapps.io, Docker registry, etc.).
+
+## Contributing
+
+See CONTRIBUTION.md for contribution guidelines.
+
+---
+
+Template developed by [samuelbharti](https://github.com/SamuelBharti).
