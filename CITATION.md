@@ -2,20 +2,20 @@
 
 Please cite this repository and template when using it in publications or derivative projects.
 
-Recommended citation (APA) — replace with your project DOI after creating a Zenodo release:
+Recommended citation (APA):
 
-Bharti, S. (2026). RShiny Template (version 2.0) [Software]. Zenodo. DOI_PLACEHOLDER
+Bharti, S. (2026). RShiny Template (version 2.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.19968601
 
-BibTeX (replace DOI and version with your project's values):
+BibTeX (use these values for this release):
 
 ```bibtex
-@software{your_project_key,
-  author = {Your, Name},
-  title = {Your Project Title},
+@software{rshiny_template_2026,
+  author = {Bharti, Samuel},
+  title = {RShiny Template},
   version = {2.0},
   date = {2026-05-02},
-  doi = {DOI_PLACEHOLDER},
-  url = {https://doi.org/DOI_PLACEHOLDER}
+  doi = {10.5281/zenodo.19968601},
+  url = {https://doi.org/10.5281/zenodo.19968601}
 }
 ```
 
