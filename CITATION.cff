@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "RShiny Template"
+version: "0.1.0"
+doi: "10.5281/zenodo.19968600"
+date-released: "2026-05-01"
+authors:
+  - family-names: Bharti
+    given-names: Samuel
+keywords:
+  - r
+  - shiny
+  - template
+license: MIT
+type: software
+abstract: "A lightweight R Shiny application template for building reproducible Shiny apps with renv and Docker support."
