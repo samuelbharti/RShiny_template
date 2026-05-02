@@ -52,6 +52,8 @@ docker run --rm -p 3838:3838 my-shiny-app
 
 Then open http://localhost:3838.
 
+This template expects a project-level `renv.lock` file and `renv/` metadata to be present in the app you create from it.
+
 ## Project Structure
 
 ```txt
@@ -70,11 +72,16 @@ Then open http://localhost:3838.
 
 ## Deployment
 
-Add deployment details (Posit Connect, shinyapps.io, Docker registry, etc.).
+Recommended deployment paths:
+
+- Posit Publisher or Posit Connect for direct app publishing
+- Docker image deployment when you want a containerized release
+
+CI/CD-driven publishing is not included here by default unless you explicitly add and maintain it for a given app.
 
 ## Contributing
 
-See CONTRIBUTION.md for contribution guidelines.
+See CONTRIBUTING.md for contribution guidelines.
 
 ---
 
