@@ -88,3 +88,7 @@ See CONTRIBUTING.md for contribution guidelines.
 ---
 
 Template developed by [samuelbharti](https://github.com/SamuelBharti).
+
+## How to cite
+
+If you use this template or a derived project, please cite it. Machine-readable citation metadata is available in `CITATION.cff`, and a human-readable example is provided in `CITATION.md`.
