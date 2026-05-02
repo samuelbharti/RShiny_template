@@ -10,3 +10,7 @@ All notable changes to this project should be documented in this file.
 
 - Created base Shiny template structure.
 
+## [2.0.0] - 2026-05-02
+
+- Bumped template version to v2.0 and updated metadata (CITATION, README).
+
