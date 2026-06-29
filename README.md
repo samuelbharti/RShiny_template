@@ -1,6 +1,14 @@
 # Project Title
 
+<!-- template:strip:start -->
+> **Using this template:** click **Use this template** on GitHub (or
+> `npx degit SamuelBharti/RShiny_template my-app`), then run
+> `Rscript dev/use_template.R --project_name="My App" --author="Your Name"`
+> to set your project name, author, and version. This block, the citation
+> files, and the template machinery are removed automatically.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19968601.svg)](https://doi.org/10.5281/zenodo.19968601)
+<!-- template:strip:end -->
 
 Add a short description of your application.
 
@@ -85,6 +93,7 @@ CI/CD-driven publishing is not included here by default unless you explicitly ad
 
 See CONTRIBUTING.md for contribution guidelines.
 
+<!-- template:strip:start -->
 ---
 
 Template developed by [samuelbharti](https://github.com/SamuelBharti).
@@ -92,3 +101,4 @@ Template developed by [samuelbharti](https://github.com/SamuelBharti).
 ## How to cite
 
 If you use this template or a derived project, please cite it. Machine-readable citation metadata is available in `CITATION.cff`, and a human-readable example is provided in `CITATION.md`.
+<!-- template:strip:end -->
