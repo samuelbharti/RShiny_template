@@ -4,7 +4,9 @@ other_page <- fluidPage(
   fluidRow(
     column(
       width = 12,
-      p("Use this page for secondary features, documentation, or data downloads.")
+      p(
+        "Use this page for secondary features, documentation, or data downloads."
+      )
     )
   )
 )

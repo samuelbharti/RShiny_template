@@ -12,7 +12,9 @@ if (!file.exists("renv.lock")) {
   # Install a few recommended packages used by the template
   renv::install(c("shiny", "bslib", "dplyr", "ggplot2", "DT", "plotly"))
   renv::snapshot()
-  message("renv initialized and renv.lock written. Review renv.lock before committing.")
+  message(
+    "renv initialized and renv.lock written. Review renv.lock before committing."
+  )
 } else {
   message("renv.lock already exists. Use renv::restore() to restore packages.")
 }
