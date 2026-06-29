@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file MD041 -->
 <!-- Thanks for contributing! Please fill out the sections below. -->
 
 ## Summary
