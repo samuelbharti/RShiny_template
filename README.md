@@ -1,6 +1,14 @@
 # Project Title
 
+<!-- template:strip:start -->
+> **Using this template:** click **Use this template** on GitHub (or
+> `npx degit SamuelBharti/RShiny_template my-app`), then run
+> `Rscript dev/use_template.R --project_name="My App" --author="Your Name"`
+> to set your project name, author, and version. This block, the citation
+> files, and the template machinery are removed automatically.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19968600.svg)](https://doi.org/10.5281/zenodo.19968600)
+<!-- template:strip:end -->
 
 Add a short description of your application.
 
@@ -30,6 +38,7 @@ renv::restore()
 install.packages(c(
   "shiny",
   "bslib",
+  "brand.yml",
   "dplyr",
   "ggplot2",
   "DT",
@@ -60,6 +69,7 @@ This template expects a project-level `renv.lock` file and `renv/` metadata to b
 
 ```txt
 .
+├── _brand.yml              # Brand colors, fonts, logo (theming)
 ├── global.R                # Libraries and global objects
 ├── ui.R                    # App UI definition
 ├── server.R                # App server logic
@@ -81,10 +91,20 @@ Recommended deployment paths:
 
 CI/CD-driven publishing is not included here by default unless you explicitly add and maintain it for a given app.
 
+## Theming
+
+Branding lives in [`_brand.yml`](_brand.yml) — colors, fonts, and logo in one
+place. It is applied automatically by bslib via `bs_theme(brand = TRUE)` in
+[ui.R](ui.R). Edit `_brand.yml` to restyle the whole app; no other changes are
+needed. To also theme plots and tables, install
+[`thematic`](https://rstudio.github.io/thematic/) — `global.R` picks it up
+automatically when present. See [docs/theming.md](docs/theming.md).
+
 ## Contributing
 
 See CONTRIBUTING.md for contribution guidelines.
 
+<!-- template:strip:start -->
 ---
 
 Template developed by [samuelbharti](https://github.com/SamuelBharti).
@@ -92,3 +112,4 @@ Template developed by [samuelbharti](https://github.com/SamuelBharti).
 ## How to cite
 
 If you use this template or a derived project, please cite it. Machine-readable citation metadata is available in `CITATION.cff`, and a human-readable example is provided in `CITATION.md`.
+<!-- template:strip:end -->

@@ -4,7 +4,7 @@ Please cite this repository and template when using it in publications or deriva
 
 Recommended citation (APA):
 
-Bharti, S. (2026). RShiny Template (version 2.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.19968600
+Bharti, S. (2026). RShiny Template (version 2.0) [Software]. Zenodo. <https://doi.org/10.5281/zenodo.19968600>
 
 BibTeX (use these values for this release):
 
