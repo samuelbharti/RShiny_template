@@ -44,6 +44,9 @@ substitutions:
   - file: ui.R
     from: 'title = "My App"'
     to: 'title = "{{project_name}}"'
+  - file: _brand.yml
+    from: "name: My App"
+    to: "name: {{project_name}}"
   - file: R/utils.R
     from: '"2.0.0"'
     to: '"{{version}}"'
