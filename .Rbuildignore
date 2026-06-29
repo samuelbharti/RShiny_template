@@ -5,3 +5,9 @@
 ^renv$
 ^renv\.lock$
 ^Dockerfile$
+^air\.toml$
+^template\.yml$
+^\.lintr$
+^\.pre-commit-config\.yaml$
+^\.Renviron\.example$
+^CHANGELOG\.md$
