@@ -38,6 +38,7 @@ renv::restore()
 install.packages(c(
   "shiny",
   "bslib",
+  "brand.yml",
   "dplyr",
   "ggplot2",
   "DT",
@@ -68,6 +69,7 @@ This template expects a project-level `renv.lock` file and `renv/` metadata to b
 
 ```txt
 .
+├── _brand.yml              # Brand colors, fonts, logo (theming)
 ├── global.R                # Libraries and global objects
 ├── ui.R                    # App UI definition
 ├── server.R                # App server logic
@@ -88,6 +90,15 @@ Recommended deployment paths:
 - Docker image deployment when you want a containerized release
 
 CI/CD-driven publishing is not included here by default unless you explicitly add and maintain it for a given app.
+
+## Theming
+
+Branding lives in [`_brand.yml`](_brand.yml) — colors, fonts, and logo in one
+place. It is applied automatically by bslib via `bs_theme(brand = TRUE)` in
+[ui.R](ui.R). Edit `_brand.yml` to restyle the whole app; no other changes are
+needed. To also theme plots and tables, install
+[`thematic`](https://rstudio.github.io/thematic/) — `global.R` picks it up
+automatically when present. See [docs/theming.md](docs/theming.md).
 
 ## Contributing
 

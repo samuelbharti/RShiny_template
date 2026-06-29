@@ -32,6 +32,7 @@ jobs:
             any::lintr
             any::shiny
             any::bslib
+            any::brand.yml
             any::dplyr
             any::ggplot2
             any::DT
@@ -65,6 +66,7 @@ jobs:
           packages: |
             any::shiny
             any::bslib
+            any::brand.yml
             any::dplyr
             any::ggplot2
             any::DT
