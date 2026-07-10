@@ -9,15 +9,12 @@ if (!requireNamespace("renv", quietly = TRUE)) {
 if (!file.exists("renv.lock")) {
   message("Initializing renv and taking initial snapshot...")
   renv::init(bare = TRUE)
-  # Install a few recommended packages used by the template
+  # Install the packages used by the template
   renv::install(c(
     "shiny",
     "bslib",
     "brand.yml",
-    "dplyr",
-    "ggplot2",
-    "DT",
-    "plotly"
+    "thematic"
   ))
   renv::snapshot()
   message(

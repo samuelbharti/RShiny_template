@@ -12,7 +12,8 @@
 1. Create a branch from `dev`.
 2. Add UI or server changes in the appropriate folders.
 3. Run the app locally.
-4. Restore dependencies with `renv::restore()` whenever package versions change.
+4. If the project uses `renv`, run `renv::snapshot()` after adding packages and
+   `renv::restore()` after pulling lockfile changes.
 
 ## Deployment
 
