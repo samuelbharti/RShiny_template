@@ -13,3 +13,12 @@ renv/staging/
 
 # Local development helpers
 dev/.Rhistory
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
