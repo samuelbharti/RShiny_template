@@ -7,7 +7,8 @@
 
 ## Local Setup
 
-1. Restore dependencies with `renv::restore()`.
+1. Install the app packages (see the README Installation section), or run
+   `Rscript dev/init-renv.R` to set up `renv`.
 2. Run the app locally with `shiny::runApp()`.
 3. (Recommended) Install the git pre-commit hooks:
 
