@@ -2,7 +2,7 @@
 
 <!-- template:strip:start -->
 > **Using this template:** click **Use this template** on GitHub (or
-> `npx degit SamuelBharti/RShiny_template my-app`), then run
+> `npx degit samuelbharti/RShiny_template my-app`), then run
 > `Rscript dev/use_template.R --project_name="My App" --author="Your Name"`
 > to set your project name, author, and version. This block, the citation
 > files, and the template machinery are removed automatically.
@@ -75,11 +75,14 @@ The Dockerfile restores the project library from `renv.lock` when present. Creat
 ├── global.R                # Libraries and global objects
 ├── ui.R                    # App UI definition
 ├── server.R                # App server logic
+├── template.yml            # Template manifest (removed on init)
+├── Dockerfile              # Container build for deployment
 ├── R/                      # Utility functions
 ├── modules/                # Reusable Shiny modules
 ├── userInterface/          # Page-level UI components
 ├── data/                   # App data files
 ├── dev/                    # Local development scripts
+├── tests/                  # testthat + shinytest2 tests
 ├── www/                    # Static assets (css/js/img)
 └── docs/                   # Project documentation
 ```
@@ -109,7 +112,7 @@ See CONTRIBUTING.md for contribution guidelines.
 <!-- template:strip:start -->
 ---
 
-Template developed by [samuelbharti](https://github.com/SamuelBharti).
+Template developed by [samuelbharti](https://github.com/samuelbharti).
 
 ## How to cite
 

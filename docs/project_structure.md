@@ -2,16 +2,20 @@
 
 ```txt
 .
+├── _brand.yml
 ├── global.R
 ├── ui.R
 ├── server.R
+├── template.yml
+├── Dockerfile
 ├── R/
 ├── modules/
 ├── userInterface/
 ├── data/
 ├── dev/
-├── docs/
-└── www/
+├── tests/
+├── www/
+└── docs/
 ```
 
 ## Notes
