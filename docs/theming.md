@@ -30,7 +30,8 @@ typography:
     - family: Roboto
       source: google
       weight: [400, 600]
-  base: Roboto
+  base:
+    family: Roboto
 ```
 
 Restart the app to see changes. The full set of fields is documented in the
