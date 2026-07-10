@@ -2,7 +2,7 @@ example_counter_ui <- function(id) {
   ns <- NS(id)
 
   tagList(
-    h3("Example Module"),
+    h3("Example Counter Module"),
     p("Use this module as a starter pattern for UI + server separation."),
     actionButton(ns("increment"), "Increment"),
     br(),
