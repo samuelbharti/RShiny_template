@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "RShiny Template"
-version: "2.2.0"
+version: "2.3.0"
 doi: "10.5281/zenodo.19968600"
-date-released: "2026-06-29"
+date-released: "2026-07-10"
 authors:
   - family-names: Bharti
     given-names: Samuel

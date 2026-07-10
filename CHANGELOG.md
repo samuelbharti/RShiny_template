@@ -4,6 +4,8 @@ All notable changes to this project should be documented in this file.
 
 ## [Unreleased]
 
+## [2.3.0] - 2026-07-10
+
 - Fixed template manifest version anchors that silently stopped matching after
   the v2.2 bump, and made `dev/use_template.R` warn when a substitution anchor
   has no match.
