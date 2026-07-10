@@ -14,7 +14,7 @@ Add a short description of your application.
 
 Maintained by Your Name.
 
-Current app version: v2.2
+Current app version: v2.3
 
 ## Requirements
 
