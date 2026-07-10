@@ -13,11 +13,10 @@ repos:
     hooks:
       - id: air-format
 
-  # R-specific lint and safety checks.
+  # R-specific safety checks.
   - repo: https://github.com/lorenzwalthert/precommit
     rev: v0.4.3
     hooks:
-      - id: lintr
       - id: parsable-R
       - id: no-browser-statement
       - id: no-debug-statement

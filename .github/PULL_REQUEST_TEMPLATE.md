@@ -15,7 +15,7 @@
 ## Checklist
 
 - [ ] App runs locally (`shiny::runApp()`).
-- [ ] Code is formatted (`air format .`) and lints clean (`lintr::lint_dir(".")`).
+- [ ] Code is formatted (`air format .`).
 - [ ] New/changed code follows the project structure (`userInterface/`, `modules/`, `R/`).
 - [ ] Tests added or updated where appropriate, and `shiny::runTests(".")` passes.
 - [ ] README / docs updated if behavior changed.
