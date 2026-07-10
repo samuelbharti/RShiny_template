@@ -73,7 +73,15 @@ apply_substitutions <- function(manifest, values, root) {
     contents <- readLines(path, warn = FALSE)
     target <- expand_vars(sub$to, values)
     if (!any(grepl(sub$from, contents, fixed = TRUE))) {
-      message("  skip (no match in ", sub$file, "): ", sub$from)
+      warning(
+        "Substitution anchor not found in ",
+        sub$file,
+        ": ",
+        sub$from,
+        "\nThe manifest is out of sync with the file; this value was NOT applied.",
+        call. = FALSE,
+        immediate. = TRUE
+      )
       next
     }
     contents <- gsub(sub$from, target, contents, fixed = TRUE)
