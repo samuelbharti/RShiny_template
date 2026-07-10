@@ -4,6 +4,12 @@ All notable changes to this project should be documented in this file.
 
 ## [Unreleased]
 
+## [2.3.1] - 2026-07-10
+
+- Fixed the test suite when `thematic` is installed: its auto-theming needs a
+  real app session and broke `renderPlot` under `shiny::testServer`, so tests
+  now deactivate it (the shinytest2 smoke test still covers it in a real app).
+
 ## [2.3.0] - 2026-07-10
 
 - Fixed template manifest version anchors that silently stopped matching after

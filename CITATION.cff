@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "RShiny Template"
-version: "2.3.0"
+version: "2.3.1"
 doi: "10.5281/zenodo.19968600"
 date-released: "2026-07-10"
 authors:

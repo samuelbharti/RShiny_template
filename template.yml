@@ -51,7 +51,7 @@ substitutions:
     from: "name: My App"
     to: "name: {{project_name}}"
   - file: R/utils.R
-    from: '"2.3.0"'
+    from: '"2.3.1"'
     to: '"{{version}}"'
 
 # Whole files describing THE TEMPLATE, not your app. Deleted on init.
