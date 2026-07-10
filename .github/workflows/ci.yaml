@@ -21,6 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: posit-dev/setup-air@v1
+        with:
+          # Keep in sync with the posit-dev/air rev in .pre-commit-config.yaml.
+          version: "0.10.0"
       - name: Check formatting
         run: air format --check .
 
