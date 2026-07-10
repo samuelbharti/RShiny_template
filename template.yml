@@ -23,7 +23,7 @@ variables:
     default: "A Shiny application."
   author:
     prompt: "Author name"
-    default: ""
+    default: "Your Name"
   version:
     prompt: "Initial version"
     default: "0.1.0"
@@ -39,8 +39,11 @@ substitutions:
     from: "Add a short description of your application."
     to: "{{description}}"
   - file: README.md
-    from: "Current app version: v2.0"
+    from: "Current app version: v2.3"
     to: "Current app version: {{version}}"
+  - file: README.md
+    from: "Maintained by Your Name."
+    to: "Maintained by {{author}}."
   - file: ui.R
     from: 'title = "My App"'
     to: 'title = "{{project_name}}"'
@@ -48,7 +51,7 @@ substitutions:
     from: "name: My App"
     to: "name: {{project_name}}"
   - file: R/utils.R
-    from: '"2.0.0"'
+    from: '"2.3.0"'
     to: '"{{version}}"'
 
 # Whole files describing THE TEMPLATE, not your app. Deleted on init.

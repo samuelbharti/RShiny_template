@@ -7,7 +7,8 @@
 
 ## Local Setup
 
-1. Restore dependencies with `renv::restore()`.
+1. Install the app packages (see the README Installation section), or run
+   `Rscript dev/init-renv.R` to set up `renv`.
 2. Run the app locally with `shiny::runApp()`.
 3. (Recommended) Install the git pre-commit hooks:
 
@@ -22,7 +23,7 @@
 - Keep reusable UI/server logic in `modules/`.
 - Keep utility functions in `R/` (auto-sourced by `R/load_components.R`).
 - Format R code with [air](https://posit-dev.github.io/air/): `air format .`
-- Lint with `lintr::lint_dir(".")` (config in `.lintr`).
+  (config in `air.toml`).
 
 ## Testing
 
@@ -54,13 +55,13 @@ that copy as a generated mirror of a tagged release — never hand-edit it.
 ## Continuous Integration
 
 Every push and pull request runs the `CI` workflow (`.github/workflows/ci.yaml`):
-lint, formatting check, the test suite, and Markdown linting. Make sure these
+formatting check, the test suite, and Markdown linting. Make sure these
 pass locally before opening a PR.
 
 ## Pull Request Checklist
 
 - [ ] App runs locally (`shiny::runApp()`).
-- [ ] Code is formatted (`air format .`) and lints clean (`lintr::lint_dir(".")`).
+- [ ] Code is formatted (`air format .`).
 - [ ] Tests pass (`shiny::runTests(".")`).
 - [ ] New/changed code follows the project structure.
 - [ ] README/docs updated if behavior changed.

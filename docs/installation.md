@@ -1,26 +1,25 @@
 # Installation
 
-## Recommended: renv
+## Manual setup
 
-1. Install `renv` if needed.
-2. Run `renv::restore()` in the project root.
-3. Start the app with `shiny::runApp()`.
+Install the packages used by the app and start it:
 
-If you are using Docker, keep `renv.lock` and the `renv/` directory in the project root so the image can restore the project library from the lockfile.
+```r
+install.packages(c("shiny", "bslib", "brand.yml"))
+shiny::runApp()
+```
 
-### Quick-start helper
+Optionally install `thematic` so plots follow the app theme (`global.R` picks it up automatically when present).
 
-This template includes a helper script to initialize `renv` for a new project. Run:
+## renv (recommended for reproducibility)
+
+The template ships without a lockfile. Initialize `renv` once for your project:
 
 ```sh
 Rscript dev/init-renv.R
 ```
 
-This will create `renv.lock` after installing a small set of recommended packages. Review the lockfile before committing.
-
-## Manual setup
-
-Install required packages listed in README and run `shiny::runApp()`.
+This installs the packages used by the app and writes `renv.lock`. Review the lockfile before committing. From then on, use `renv::restore()` to restore the project library.
 
 ## Docker
 
@@ -36,4 +35,4 @@ Run:
 docker run --rm -p 3838:3838 my-shiny-app
 ```
 
-The Dockerfile is intended to restore from `renv.lock` rather than install packages ad hoc.
+The Dockerfile restores the project library from `renv.lock` when present. Create one with `Rscript dev/init-renv.R` before building so the image installs your app's packages; without a lockfile the image relies on the packages bundled with the base image.

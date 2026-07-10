@@ -2,7 +2,7 @@
 
 <!-- template:strip:start -->
 > **Using this template:** click **Use this template** on GitHub (or
-> `npx degit SamuelBharti/RShiny_template my-app`), then run
+> `npx degit samuelbharti/RShiny_template my-app`), then run
 > `Rscript dev/use_template.R --project_name="My App" --author="Your Name"`
 > to set your project name, author, and version. This block, the citation
 > files, and the template machinery are removed automatically.
@@ -12,7 +12,9 @@
 
 Add a short description of your application.
 
-Current app version: v2.2
+Maintained by Your Name.
+
+Current app version: v2.3
 
 ## Requirements
 
@@ -22,29 +24,29 @@ Current app version: v2.2
 
 ## Installation
 
-### Option 1: Using renv (recommended)
-
-```r
-if (!requireNamespace("renv", quietly = TRUE)) {
-  install.packages("renv")
-}
-
-renv::restore()
-```
-
-### Option 2: Manual package installation
+### Option 1: Manual package installation
 
 ```r
 install.packages(c(
   "shiny",
   "bslib",
-  "brand.yml",
-  "dplyr",
-  "ggplot2",
-  "DT",
-  "plotly"
+  "brand.yml"
 ))
 ```
+
+Optionally install [`thematic`](https://rstudio.github.io/thematic/) so plots
+follow the app theme — `global.R` picks it up automatically when present.
+
+### Option 2: Using renv
+
+The template ships without a lockfile. Bootstrap one for your project:
+
+```sh
+Rscript dev/init-renv.R
+```
+
+This initializes `renv`, installs the packages above, and writes `renv.lock`.
+After that, use `renv::restore()` to restore the project library.
 
 ## How To Run
 
@@ -63,7 +65,7 @@ docker run --rm -p 3838:3838 my-shiny-app
 
 Then open [http://localhost:3838](http://localhost:3838).
 
-This template expects a project-level `renv.lock` file and `renv/` metadata to be present in the app you create from it.
+The Dockerfile restores the project library from `renv.lock` when present. Create one with `Rscript dev/init-renv.R` before building so the image installs your app's packages; without a lockfile the image relies on the packages bundled with the base image.
 
 ## Project Structure
 
@@ -73,11 +75,14 @@ This template expects a project-level `renv.lock` file and `renv/` metadata to b
 ├── global.R                # Libraries and global objects
 ├── ui.R                    # App UI definition
 ├── server.R                # App server logic
+├── template.yml            # Template manifest (removed on init)
+├── Dockerfile              # Container build for deployment
 ├── R/                      # Utility functions
 ├── modules/                # Reusable Shiny modules
 ├── userInterface/          # Page-level UI components
 ├── data/                   # App data files
 ├── dev/                    # Local development scripts
+├── tests/                  # testthat + shinytest2 tests
 ├── www/                    # Static assets (css/js/img)
 └── docs/                   # Project documentation
 ```
@@ -107,7 +112,7 @@ See CONTRIBUTING.md for contribution guidelines.
 <!-- template:strip:start -->
 ---
 
-Template developed by [samuelbharti](https://github.com/SamuelBharti).
+Template developed by [samuelbharti](https://github.com/samuelbharti).
 
 ## How to cite
 
