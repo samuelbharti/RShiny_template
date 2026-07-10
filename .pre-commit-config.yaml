@@ -8,8 +8,9 @@ exclude: "^(renv/|data/|docs/)"
 
 repos:
   # R code formatting with air (matches air.toml; same formatter rstudio/shiny uses).
-  - repo: https://github.com/posit-dev/air
-    rev: v0.9.0
+  # Keep this rev in sync with the air version pinned in .github/workflows/ci.yaml.
+  - repo: https://github.com/posit-dev/air-pre-commit
+    rev: 0.10.0
     hooks:
       - id: air-format
 
